@@ -3,15 +3,24 @@ import './../styles/main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import a module from another file.
-import tiy from './app.js';
-
-// Looks like the imported module was a function, because here we're executing it!
-tiy();
-
 const TestComponent = React.createClass({
 	render: function() {
-		return <h1>Test~</h1>;
+		return (
+			<div>
+			<div className="a1 col-1 col-2 col-3 col-4"></div>
+			<div className="a2 col-1 col-2 col-3 col-4"></div>
+			<div className="a3 col-1 col-2 col-3 col-4"></div>
+			<div className="a4 col-1 col-2 col-3 col-4"></div>
+			<div className="a5 col-1 col-2 col-3 col-4"></div>
+			<div className="a6 col-1 col-2 col-3 col-4"></div>
+			<div className="a7 col-1 col-2 col-3 col-4"></div>
+			<div className="a8 col-1 col-2 col-3 col-4"></div>
+			<div className="a9 col-1 col-2 col-3 col-4"></div>
+			<div className="a10 col-1 col-2 col-3 col-4"></div>
+			<div className="a11 col-1 col-2 col-3 col-4"></div>
+			<div className="a12 col-1 col-2 col-3 col-4"></div>
+			</div>
+		);
 	}
 });
 

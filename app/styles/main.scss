@@ -1,6 +1,100 @@
-@import 'variables';
+// number classes are only for test purposes
+// put all final classes inside another class called "grid"
+// than in instructions, make sure people have a container div
+// named "grid"
 
-body {
-  background: $light-grey;
-  background-image: url(../assets/orangecat.jpg);
+// test how this works with and without borders on the divs, as well
+// as with the divs being border-box and other
+
+// adjust breakpoints and figure out how best to do 3 and 4 columns
+// (do I allow user to customize or just max out at 3?)
+
+.a1 {
+	background-color: red;
+	height: 5em;
+	width: 90%;
+}
+
+.a2 {
+	background-color: blue;
+	height: 5em;
+}
+
+.a3 {
+	background-color: yellow;
+	height: 5em;
+}
+
+.a4 {
+	background-color: pink;
+	height: 5em;
+}
+
+.a5 {
+	background-color: green;
+	height: 5em;
+}
+
+.a6 {
+	background-color: black;
+	height: 5em;
+}
+
+.a7 {
+	background-color: orange;
+	height: 5em;
+}
+
+.a8 {
+	background-color: brown;
+	height: 5em;
+}
+
+.a9 {
+	background-color: #555;
+	height: 5em;
+}
+
+.a10 {
+	background-color: #111;
+	height: 5em;
+}
+
+.a11 {
+	background-color: purple;
+	height: 5em;
+}
+
+.a12 {
+	background-color: #aaaaaa;
+	height: 5em;
+}
+
+.col-1 {
+	width: 90%;
+	// does this margin need to be something other than in "em"?
+	// does it need to be in percentage?
+	margin: 1em auto;
+}
+
+@media (min-width: 481px) {
+	.col-2 {
+		width: 45%;
+		float: left;
+		margin: 2.5%;
+	}
+}
+
+@media (min-width: 700px) {
+	.col-3 {
+		width: 28%;
+		margin: 2.66%;
+	}
+}
+
+@media (min-width: 900px) {
+	.col-4 {
+		width: 21%;
+		margin: 2%;
+	}
 }
