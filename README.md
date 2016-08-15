@@ -8,11 +8,10 @@ A very simple grid system. No bells or whistles. Just a responsive grid in under
 
 ### To Use
 
-* For SASS, copy the content of the main.scss file into your own .scss file and use the class names in your code as desired
-* for CSS, do the same as above but with the main.css file
+* For either CSS or SASS, copy the content of the app/styles/main.scss file into your own .css or .scss file and use the class names in your code as desired
 
 Check out an example at [simplegrid-danbuda.surge.sh]
 
 Comments or questions are welcome!
 
-[
+[simplegrid-danbuda.surge.sh]: http://simplegrid-danbuda.surge.sh/
