@@ -1,13 +1,16 @@
 // number classes are only for test purposes
-// put all final classes inside another class called "grid"
-// than in instructions, make sure people have a container div
-// named "grid"
 
 // test how this works with and without borders on the divs, as well
 // as with the divs being border-box and other
 
-// adjust breakpoints and figure out how best to do 3 and 4 columns
-// (do I allow user to customize or just max out at 3?)
+// adjust breakpoints and make sure everything still works if user
+// chooses either 3 or 4 column max
+
+// Is there a better way to do this so that a user only needs to give
+// a div 1 class name? So if they choose "col-3" it maxes out at 3
+// columns but does that same as is currently coded by using multiple?
+	// There should be. Just give "col-3" and "col-4" the same CSS
+	// as col-1 & -2 and adjust only col-3 & -4 in the breakpoints.
 
 .a1 {
 	background-color: red;
@@ -72,29 +75,30 @@
 
 .col-1 {
 	width: 90%;
-	// does this margin need to be something other than in "em"?
-	// does it need to be in percentage?
+	// This margin can be changed to increase/decrease the vertical
+	// spacing between divs
 	margin: 1em auto;
 }
 
 @media (min-width: 481px) {
 	.col-2 {
-		width: 45%;
+		width: 46%;
 		float: left;
-		margin: 2.5%;
+		margin: 2%;
 	}
 }
 
 @media (min-width: 700px) {
 	.col-3 {
-		width: 28%;
-		margin: 2.66%;
+		width: 30%;
+		margin: 1.65%;
 	}
 }
 
+// To max out at 3 columns, comment out the breakpoint below.
 @media (min-width: 900px) {
 	.col-4 {
-		width: 21%;
-		margin: 2%;
+		width: 23%;
+		margin: 1%;
 	}
 }
