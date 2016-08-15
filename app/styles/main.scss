@@ -1,104 +1,29 @@
-// number classes are only for test purposes
+// Give container div ".grid" class to set a max-width for the grid
+.grid {
+	max-width: 900px;
+	margin: 0 auto; }
 
-// test how this works with and without borders on the divs, as well
-// as with the divs being border-box and other
-
-// adjust breakpoints and make sure everything still works if user
-// chooses either 3 or 4 column max
-
-// Is there a better way to do this so that a user only needs to give
-// a div 1 class name? So if they choose "col-3" it maxes out at 3
-// columns but does that same as is currently coded by using multiple?
-	// There should be. Just give "col-3" and "col-4" the same CSS
-	// as col-1 & -2 and adjust only col-3 & -4 in the breakpoints.
-
-.a1 {
-	background-color: red;
-	height: 5em;
+// Use ".col-3" class for 3 columns max
+// Use ".col-4" class for 4 columns max
+.col-3, .col-4 {
 	width: 90%;
-}
-
-.a2 {
-	background-color: blue;
-	height: 5em;
-}
-
-.a3 {
-	background-color: yellow;
-	height: 5em;
-}
-
-.a4 {
-	background-color: pink;
-	height: 5em;
-}
-
-.a5 {
-	background-color: green;
-	height: 5em;
-}
-
-.a6 {
-	background-color: black;
-	height: 5em;
-}
-
-.a7 {
-	background-color: orange;
-	height: 5em;
-}
-
-.a8 {
-	background-color: brown;
-	height: 5em;
-}
-
-.a9 {
-	background-color: #555;
-	height: 5em;
-}
-
-.a10 {
-	background-color: #111;
-	height: 5em;
-}
-
-.a11 {
-	background-color: purple;
-	height: 5em;
-}
-
-.a12 {
-	background-color: #aaaaaa;
-	height: 5em;
-}
-
-.col-1 {
-	width: 90%;
-	// This margin can be changed to increase/decrease the vertical
-	// spacing between divs
 	margin: 1em auto;
-}
+	// "border-box" allows the grid to work when divs have borders
+	box-sizing: border-box; }
 
-@media (min-width: 481px) {
-	.col-2 {
+@media (min-width: 480px) {
+	.col-3, .col-4 {
 		width: 46%;
 		float: left;
-		margin: 2%;
-	}
-}
+		margin: 2%; } }
 
-@media (min-width: 700px) {
-	.col-3 {
+@media (min-width: 768px) {
+	.col-3, .col-4 {
 		width: 30%;
-		margin: 1.65%;
-	}
-}
+		margin: 1.65%; } }
 
-// To max out at 3 columns, comment out the breakpoint below.
-@media (min-width: 900px) {
+// Not needed for 3 column max grid
+@media (min-width: 992px) {
 	.col-4 {
 		width: 23%;
-		margin: 1%;
-	}
-}
+		margin: 1%; } }
