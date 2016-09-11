@@ -1,5 +1,7 @@
 # Simple Grid
 
+<kbd>![Image](simple-grid.png)</kbd>
+
 A very simple grid system. No bells or whistles. Just a responsive grid in under 30 lines of CSS.
 
 * Breakpoints for mobile, tablet, and desktop
