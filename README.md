@@ -12,4 +12,4 @@ A very simple grid system. No bells or whistles. Just a responsive grid in under
 
 * For either CSS or SASS, copy the content of the app/styles/main.scss file into your own .css or .scss file and use the class names in your code as desired
 
-Check out a live example [here](http://simplegrid-danbuda.surge.sh/) or a working CodePenn [here](http://codepen.io/danbuda/pen/KgVgxz).
+Check out a live example [here](http://simplegrid-danbuda.surge.sh/) or a working CodePen [here](http://codepen.io/danbuda/pen/KgVgxz).
